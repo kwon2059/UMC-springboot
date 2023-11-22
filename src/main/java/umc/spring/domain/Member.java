@@ -57,6 +57,7 @@ public class Member extends BaseEntity {
     private String email;
 
     @Column(nullable = false)
+    @ColumnDefault("0")
     private Integer point;
 
     //MemberPrefer과 양방향 매핑 1:N = Member : Mb_prefer

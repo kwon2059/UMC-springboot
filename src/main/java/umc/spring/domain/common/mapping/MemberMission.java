@@ -21,8 +21,8 @@ public class MemberMission extends BaseEntity {
     private Long id;
 
     @Enumerated(EnumType.STRING)
-    @Column(nullable = false, length = 15)
-    @ColumnDefault("'NOTYET'")
+//    @Column(nullable = false, length = 15)
+//    @ColumnDefault("'NOTYET'")
     private MissionStatus status;
 
     @ManyToOne(fetch = FetchType.LAZY)
