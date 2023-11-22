@@ -1,4 +1,4 @@
-package umc.study.apiPayload.code;
+package umc.spring.apiPayload.code;
 
 import lombok.Builder;
 import lombok.Getter;

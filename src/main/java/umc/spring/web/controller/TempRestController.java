@@ -1,3 +1,5 @@
+package umc.spring.web.controller;
+
 @RestController
 @RequestMapping("/temp")
 @RequiredArgsConstructor

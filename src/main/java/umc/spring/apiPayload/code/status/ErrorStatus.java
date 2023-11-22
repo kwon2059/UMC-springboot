@@ -1,4 +1,4 @@
-package umc.study.apiPayload.code.status;
+package umc.spring.apiPayload.code.status;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -28,7 +28,7 @@ public enum ErrorStatus implements BaseErrorCode {
     //ErrorStatus에 새로운 경우 추가하기
     TEMP_EXCEPTION(HttpStatus.BAD_REQUEST, "TEMP4001", "이거는 테스트"),
 
-    // FoodCategory Error
+    // FoodCategory Error (추가)
     FOOD_CATEGORY_NOT_FOUND(HttpStatus.NOT_FOUND, "FOOD_CATEGORY4001", "음식 카테고리가 없습니다.");
 
     private final HttpStatus httpStatus;
