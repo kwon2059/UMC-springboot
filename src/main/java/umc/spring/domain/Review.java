@@ -4,6 +4,7 @@ import lombok.*;
 import umc.spring.domain.common.BaseEntity;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Getter

@@ -1,6 +1,7 @@
 package umc.spring.domain;
 
 import lombok.*;
+import org.hibernate.annotations.ColumnDefault;
 import umc.spring.domain.common.BaseEntity;
 import umc.spring.domain.common.enums.Gender;
 import umc.spring.domain.common.enums.MemberStatus;
@@ -56,7 +57,6 @@ public class Member extends BaseEntity {
     @Column(nullable = false, length = 50)
     private String email;
 
-    @Column(nullable = false)
     @ColumnDefault("0")
     private Integer point;
 
