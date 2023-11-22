@@ -1,3 +1,28 @@
+package umc.study.apiPayload.exception;
+
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.context.request.ServletWebRequest;
+import org.springframework.web.context.request.WebRequest;
+import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
+import umc.study.apiPayload.ApiResponse;
+import umc.study.apiPayload.code.ErrorReasonDTO;
+import umc.study.apiPayload.code.status.ErrorStatus;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.validation.ConstraintViolationException;
+import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.util.LinkedHashMap;
+import java.util.Map;
+import java.util.Optional;
+
 @Slf4j
 @RestControllerAdvice(annotations = {RestController.class})
 public class ExceptionAdvice extends ResponseEntityExceptionHandler {
