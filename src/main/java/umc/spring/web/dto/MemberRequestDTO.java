@@ -22,11 +22,9 @@ public class MemberRequestDTO {
         Integer birthMonth;
         @NotNull
         Integer birthDay;
-        @Size(min = 6, max = 127)
-        String email;
-        @Size(min = 5, max = 12)
+        @NotNull
         String address;
-        @Size(min = 5, max = 12)
+        @NotNull
         String specAddress;
         @ExistCategories
         List<Long> preferCategory;
